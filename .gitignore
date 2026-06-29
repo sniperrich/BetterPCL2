@@ -10,6 +10,13 @@ publish/
 *.suo
 *.DotSettings.user
 
+# Dev tool configs
+.superpowers/
+.reasonix/
+.claude/
+.verify/
+docs/
+
 # OS
 .DS_Store
 Thumbs.db
