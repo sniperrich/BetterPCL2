@@ -1,0 +1,61 @@
+<Grid x:Class="PCL.PageLogin4399" Tag="False"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:PCL"
+      mc:Ignorable="d"
+      d:DesignWidth="360"
+      d:DesignHeight="420">
+    <local:MyScrollViewer VerticalScrollBarVisibility="Auto"
+                          HorizontalScrollBarVisibility="Disabled">
+        <StackPanel x:Name="PanRoot" Margin="4,0,4,8">
+            <TextBlock Text="平台"
+                       Margin="4,0,0,8"
+                       Opacity="0.72"
+                       FontSize="12" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <local:MyButton x:Name="BtnPlatformNetease"
+                                Grid.Column="0"
+                                Height="34"
+                                ColorType="Normal"
+                                Text="Netease" />
+                <local:MyButton x:Name="BtnPlatform4399"
+                                Grid.Column="2"
+                                Height="34"
+                                ColorType="Highlight"
+                                Text="4399" />
+            </Grid>
+
+            <local:MyCard Title="4399 账号密码登录"
+                          Margin="0,14,0,0">
+                <StackPanel Margin="16,42,16,16">
+                    <TextBlock x:Name="LabPasswordTitle"
+                               FontSize="15"
+                               FontWeight="SemiBold" />
+                    <TextBlock x:Name="LabPasswordDesc"
+                               Margin="0,6,0,0"
+                               Opacity="0.76"
+                               TextWrapping="Wrap" />
+                    <local:MyTextBox x:Name="TextName"
+                                     Height="32"
+                                     Margin="0,16,0,0"
+                                     HintText="4399 账号或手机号" />
+                    <PasswordBox x:Name="TextPass"
+                                 Height="32"
+                                 Margin="0,10,0,0" />
+                    <local:MyButton x:Name="BtnLogin"
+                                    Height="36"
+                                    Margin="0,18,0,0"
+                                    ColorType="Highlight"
+                                    Text="登录 4399" />
+                </StackPanel>
+            </local:MyCard>
+        </StackPanel>
+    </local:MyScrollViewer>
+</Grid>
